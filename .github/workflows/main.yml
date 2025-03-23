@@ -30,7 +30,7 @@ jobs:
     steps:
       - name: Obtendo o Codigo
         uses: actions/checkout@v4.2.2
-        name: Obtendo o contexto
+      - name: Obtendo o contexto
       - uses: azure/k8s-set-context@v4
         with:
           method: kubeconfig
