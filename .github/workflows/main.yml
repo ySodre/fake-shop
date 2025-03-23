@@ -31,6 +31,7 @@ jobs:
       - name: Obtendo o Codigo
         uses: actions/checkout@v4.2.2
       - uses: azure/k8s-set-context@v4
+        with:
           method: kubeconfig
           kubeconfig: ${{ secrets.K8S_KUBECONFIG }}
       - uses: Azure/k8s-deploy@v5
