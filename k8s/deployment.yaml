@@ -49,6 +49,7 @@ spec:
       labels:
         app: fakeshop
     spec:
+      replicas: 10
       containers:
       - name: fakeshop
         image: sodreus/fake-shop-desafio:v1
