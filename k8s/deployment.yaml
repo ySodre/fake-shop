@@ -49,6 +49,7 @@ spec:
     metadata:
       labels:
         app: fakeshop
+    spec:
       containers:
       - name: fakeshop
         image: sodreus/fake-shop-desafio:v1
