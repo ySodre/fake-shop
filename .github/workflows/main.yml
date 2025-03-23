@@ -20,8 +20,8 @@ jobs:
         with:
           context: ./src
           push: true
-          file:
-          tags: fabricioveronez/fake-shop-desafio:v1
+          file: ./src/dockerfile
+          tags: sodreus/fake-shop-desafio:v2
   CD:
     needs: [CI]
     runs-on: ubuntu-latest
