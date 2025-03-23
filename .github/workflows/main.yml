@@ -35,7 +35,7 @@ jobs:
         with:
           method: kubeconfig
           kubeconfig: ${{ secrets.K8S_KUBECONFIG }}
-        name: Deploy
+      - name: Deploy
       - uses: Azure/k8s-deploy@v5
         with:
           manifests: |
